@@ -94,7 +94,7 @@ Running it again is safe: it keeps your answers and tidies up skills the lab has
 ```mermaid
 flowchart LR
     subgraph LAB["ResearchLab (read-only)"]
-        SK["the lab's skills<br/>catalogue of specialists and packs"]
+        SK["the lab's skills<br/>and its catalogue of specialists"]
     end
     subgraph PRJ["your project folder"]
         LN[".agents/skills: links"]
@@ -247,9 +247,9 @@ mindmap
       formal, simulation, experiments
       causal, qualitative, design
       synthesis, archives
-    Chosen by your field
-      domain packs
-      generated experts for your subfields
+    Designed for your field
+      experts for each of your subfields
+      two rival schools
       a skeptic and a translator
 ```
 
@@ -264,25 +264,26 @@ A tested script, `cast_plan.py`, turns the classification into the project's pla
 
 ```mermaid
 flowchart LR
-    P[["profile.toml<br/>fields · modes · outputs · sensitivities"]] --> CP("cast_plan.py")
+    P[["Your confirmed classification<br/>field · methods · outputs · sensitivities"]] --> CP("cast_plan.py")
     CP --> M["Method specialists<br/>one per mode"]
     CP --> G["Guardians<br/>one per sensitivity"]
-    CP --> K["Domain packs<br/>where the lab has one"]
-    CP --> X["Generated experts<br/>for every other subfield"]
+    CP --> X["Domain experts<br/>designed for your subfields"]
     CP --> S["Story types · reporting standard<br/>search databases · gate conditions"]
-    M & G & K & X --> R(["Project rooms:<br/>seminar · tribunal · proof room"])
+    M & G & X --> R(["Project rooms:<br/>seminar · tribunal · proof room"])
 ```
 
 Here is what the planner produces for four very different projects. This is real output, abridged:
 
 | Project | Method specialists | Domain experts | Guardians | Stories and standard |
 |---|---|---|---|---|
-| *Model theory of quantum mechanics*<br>1.1 Mathematics, 1.3 Physical sciences · formal | Seo-yeon (formal verification), Pedro (small cases) | the mathematics and physics packs; new experts for model theory and quantum mechanics | none | `THM` `LEM` `FORMAL`, plus a proof room |
+| *Model theory of quantum mechanics*<br>1.1 Mathematics, 1.3 Physical sciences · formal | Seo-yeon (formal verification), Pedro (small cases) | new experts for model theory and quantum mechanics, plus the lab's mathematics and physics presets | none | `THM` `LEM` `FORMAL`, plus a proof room |
 | *How households read their credit scores*<br>5.2 Economics, 5.1 Psychology · observational and qualitative | Priya (causal inference), Camille (qualitative methods) | new experts for household finance and financial literacy | ethics, data protection | `STUDY` `DATA`; ethics approval before recruitment |
 | *Merchant networks in the Levant trade*<br>6.1 History, 5.2 Economics · archival and computational | Yusuf (archives), Sana (simulation and ML) | a new expert for Ottoman economic history | none | `DATA` `CODE` `EXP`; search in JSTOR and archive catalogues |
 | *Early warning model for sepsis*<br>3.2 Clinical medicine, 1.2 Computer science · computational and observational | Sana (simulation and ML), Priya (causal inference) | new experts for critical care and clinical prediction, and a clinician user | ethics, data protection, IP | `STUDY` `DATA` `CODE`; trial and ethics conditions at gate G2, no personal data in any deposit |
 
-The method specialists, guardians and domain packs are named and fixed. Today's packs cover mathematics, physics, and quantum information and computing; a new pack is one TOML file. Generated experts are designed for your subfields and grounded in real works that have been opened and checked. All personas are fictional: real researchers are cited, never voiced.
+The method specialists and guardians are named and the same in every project. The domain experts are designed for each project, for its own subfields, and grounded in real works that have been opened and checked. This works the same way in every field; you never write a configuration file. All personas are fictional: real researchers are cited, never voiced.
+
+A field can also have *expert presets*: named domain experts kept ready so that the same people return in every project in that field. They are optional. The lab ships three, for mathematics, physics and quantum computing, mainly as examples of the format.
 
 Here is a scene from the kill test of the first project that went through the lab. It is condensed and dramatized, but the verdict and the sources are the real ones:
 
@@ -382,9 +383,9 @@ Yes. Talk to the lab in any language. The voice check builds a language pack the
 </details>
 
 <details>
-<summary><b>My field has no domain pack. Does the lab still work?</b></summary>
+<summary><b>Does it work in my field?</b></summary>
 
-Yes. For any subfield without a pack, `lab-cast` designs experts for your project: one from each of two rival schools, a skeptic, and a translator from a neighbouring field. Each is grounded in works that have been opened and checked. A pack only makes the experts ready-made. You can [contribute one](CONTRIBUTING.md).
+Yes, in any field, with no setup beyond the first one. `lab-cast` designs the domain experts for your project: one from each of two rival schools, a skeptic, and a translator from a neighbouring field, for each of your subfields. Each is grounded in works that have been opened and checked. Your methods bring in their specialists, and anything sensitive, such as people, patients or animals, brings in its guardian and its approval checks.
 
 </details>
 
@@ -398,21 +399,21 @@ Most journals and preprint servers allow AI assistance and forbid AI authorship.
 <details>
 <summary><b>Can my co-authors use it too?</b></summary>
 
-Yes. Everything the lab writes is plain text (Markdown and TOML) in your project folder. Share the folder the way you share code or data, for example with git, and each co-author sets up the lab on their own machine.
+Yes. Everything the lab writes is plain text in your project folder. Share the folder the way you share code or data, for example with git, and each co-author sets up the lab on their own machine.
 
 </details>
 
 <a id="contribute"></a>
-## 🤝 Add your field
+## 🤝 Contribute
 
-The lab knows mathematics, physics and quantum computing best today. **Your field could be next.** A domain pack is one TOML file: the fields and keywords that select it, and two or more named, fictional experts, including at least one skeptic who knows how claims die in your field. A test checks every pack, so you'll know when yours is ready.
+The lab already works in any field. What makes it sharper is knowledge from people who work in one. You don't need to write code to share it:
 
-Wanted:
-
-- domain packs for clinical medicine, economics, history, linguistics, ecology, materials science, law and more;
-- method playbooks;
+- the literature databases and archives your field searches;
+- the reporting standards your venues expect;
+- method playbooks, such as how your field checks a measurement or a source;
 - reviewed language packs for the voice check;
-- translations of the getting-started guide.
+- translations of the getting-started guide;
+- optional expert presets for a field.
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md). Every contribution follows the [code of conduct](CODE_OF_CONDUCT.md) and the lab's [ethics](ETHICS.md).
 
@@ -438,7 +439,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md). Every contribution follows the [code o
 
 ```
 skills/                      the module: bmod-lab (record, roster, help) and every lab-* skill
-skills/lab-cast/catalogue/   classification rules, method specialists, domain packs
+skills/lab-cast/catalogue/   classification rules, method specialists, optional expert presets
 skills/lab-cast/playbooks/   specialists' playbooks (formalization, physical models, advantage audits, …)
 tools/cast.py                the core team, guests, guardians and rooms; tools/build_cast.py renders them
 tools/install_lab.py         sets the lab up in a project

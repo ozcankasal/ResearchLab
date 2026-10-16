@@ -28,7 +28,7 @@ The **Expert Desk** (`lab-agent-expert`) puts the user in conversation with the 
 - `lab-cast` classifies the project by field (OECD codes), research mode, outputs and sensitivities. A tested script turns the classification into a plan. The plan brings in three kinds of specialist:
   - method specialists for the modes, such as a causal-inference specialist for observational work;
   - guardians for the sensitivities, such as the research ethics officer when people take part;
-  - ready-made domain packs where they exist (mathematics, physics, quantum), plus newly designed experts for the other subfields.
+  - domain experts designed for the project's own subfields, in any field, plus any optional expert presets that match it.
 
   The plan also sets the story types, reporting standards, search databases and extra gate conditions the other workflows follow. The cast and project rooms go into the project's own `bmad-party-mode` customization. Recommend `lab-cast` when a project starts, when its work enters a new field or method, or when the user asks for experts. Afterwards offer the project's seminar room, the Expert Desk or `lab-spark`.
 - `lab-spark` turns a hunch, a paper or a question into idea cards: a one-sentence claim, its smallest test and its kill criterion. Recommend it when the user wants new ideas or has a vague direction. Afterwards offer `lab-survey` on the best cards.

@@ -64,7 +64,7 @@ Many people who use the lab are researchers, not programmers. While you set it u
 That is framework work, not project work. Do it here, in this repository, only when the user asks for it:
 
 - **Core personas and menus:** edit `tools/cast.py` and `tools/workflows.py`, then run `uv run tools/build_cast.py`.
-- **Method specialists, domain packs and classification rules:** edit `skills/lab-cast/catalogue/`. A new domain pack is one TOML file in `catalogue/packs/`.
+- **Method specialists and classification rules:** edit `skills/lab-cast/catalogue/`. Optional expert presets for a field live in `catalogue/packs/`, one file per field; no field needs one.
 - **Workflow skills:** edit their `SKILL.md`, references and assets under `skills/`.
 - **After any change:** run `tools/check.sh` until it is clean.
 

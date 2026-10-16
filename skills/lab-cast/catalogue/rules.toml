@@ -2,7 +2,7 @@
 # databases and extra gates. Read by scripts/cast_plan.py. Fields follow the OECD Fields of Science
 # and Technology; modes, outputs and sensitivities are the lab's own axes (help/classification.md).
 
-# ---------- fields: where to search, which domain packs apply ----------
+# ---------- fields: where to search, and which optional expert presets apply ----------
 
 [areas."1"]
 name = "Natural sciences"

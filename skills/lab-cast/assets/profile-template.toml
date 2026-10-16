@@ -12,7 +12,7 @@ summary = "<two sentences: the question and the approach>"
 fields = []
 
 # The field's own names for the specific areas, e.g. "model theory", "household finance",
-# "Ottoman economic history". Each subfield no domain pack covers gets newly cast experts.
+# "Ottoman economic history". Each subfield gets domain experts designed for this project.
 subfields = []
 
 # How the project produces knowledge, one or more of:
@@ -26,5 +26,5 @@ outputs = []
 # commercial, regulated. Leave empty only when none applies.
 sensitivities = []
 
-# Free terms that help match domain packs and searches.
+# Free terms that help choose search databases and any optional expert presets.
 keywords = []

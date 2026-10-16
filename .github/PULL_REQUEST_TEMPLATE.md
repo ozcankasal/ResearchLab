@@ -1,6 +1,6 @@
 ## What this changes
 
-<!-- One change per pull request, such as one pack, one playbook or one fix. -->
+<!-- One change per pull request, such as one field's databases, one playbook or one fix. -->
 
 ## Checklist
 

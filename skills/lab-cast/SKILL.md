@@ -37,11 +37,11 @@ The other workflows read the plan, without this conversation in the room, to kno
    `help/classification.md` in the `bmod-lab` record beside this skill defines each axis. Ask only what you cannot read, and have the researcher confirm the classification: everything downstream follows from it.
 2. **Plan.** Run `uv run {skill-root}/scripts/cast_plan.py <profile.toml> --format json > plan.json` and fix any errors it reports. The plan names:
    - the method specialists for the modes and the guardians for the sensitivities, all of them fixed, named personas;
-   - the domain packs that match the field;
-   - the generation slots: subfields that no pack covers;
+   - any optional expert presets (`catalogue/packs/`) that match the project;
+   - the generation slots: the subfields that no preset covers, usually all of them;
    - the story types, the reporting standards, the search databases, the extra gate conditions and the project rooms.
-3. **Generate the missing experts.** For each generation slot, design a domain expert following `references/casting.md` (slots, contrast rules, the rule for real people), with `references/domain-seeds.md` as a starting point. Ground each one in two to five real works. Open them, or check their metadata on Crossref or arXiv, and record the verification level. A work you could not check stays out.
-4. **Read back.** Show the cast as a table: name, where it came from (core, guardian, method, pack, or generated), the question each asks, and the rooms. Show the plan's story types, standards and gates too. Adjust with the researcher.
+3. **Design the domain experts.** For each generation slot, design a domain expert following `references/casting.md` (slots, contrast rules, the rule for real people), with `references/domain-seeds.md` as a starting point. Ground each one in two to five real works. Open them, or check their metadata on Crossref or arXiv, and record the verification level. A work you could not check stays out.
+4. **Read back.** Show the cast as a table: name, where it came from (core, guardian, method, preset, or designed), the question each asks, and the rooms. Show the plan's story types, standards and gates too. Adjust with the researcher.
 5. **Write.**
    - Write the cast sheet.
    - Assemble the party-mode block: `cast_plan.py <profile.toml> --format toml` gives the catalogue personas and rooms; add the generated experts as `[[workflow.party_members]]` with codes `x-<slug>-<role>`, and append their codes to the rooms as the plan's `add_generated` says.

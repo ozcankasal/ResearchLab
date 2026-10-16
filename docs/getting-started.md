@@ -94,7 +94,7 @@ credit-scores/
 └── .agents/  (and your assistant's)    links to the lab: you can ignore these
 ```
 
-The files are plain text (Markdown and TOML), so you can open them in any editor, keep them in git, or share them with co-authors.
+The lab writes and updates these files itself; you never need to edit them by hand. They are plain text, so you can read them in any editor, keep them in git, or share them with co-authors.
 
 ## Updating the lab
 

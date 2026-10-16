@@ -2,7 +2,7 @@
 
 Read this when the user asks who is in the lab, whom to call for a situation, which room to open, how project specialists are chosen, or how to keep contrasting voices independent.
 
-The cast has two layers. **Fixed personas** have names and are the same in every project: the core assistants, the general guests and the guardians. **Project specialists** are chosen by `lab-cast` from the project's classification. Some come from the lab's catalogue: method specialists and domain packs. The rest are designed for the project's subfields.
+The cast has two layers. **Fixed personas** have names and are the same in every project: the core assistants, the general guests and the guardians. **Project specialists** are chosen by `lab-cast` from the project's classification. The method specialists come from the lab's catalogue. The domain experts are designed for the project's own subfields, in any field; optional expert presets can stand in for them where a field has one.
 
 ## Core assistants: fixed, in every project
 
@@ -48,11 +48,11 @@ The **Expert Desk** (`lab-agent-expert`, 🎓) is not a persona. It lets the use
   - Kenji Watanabe for design and evaluation;
   - Olga Petrova for evidence synthesis;
   - Yusuf Kaya for archives and primary sources.
-- **Domain packs**: ready-made, named experts for fields the lab knows well.
+- **Domain experts, designed for each project.** For each of the project's subfields, `lab-cast` designs a core expert from each of two rival schools, a skeptic, a translator from a neighbouring field and, when relevant, a user of the result. Each is grounded in verified works, written into the project's customization, and named by the project. This is how every field is served.
+- **Expert presets (optional).** A field can keep named domain experts ready in `lab-cast/catalogue/packs/`, so the same people return in every project in that field. A preset replaces the designed experts for the subfields it covers. The lab ships three, mainly as examples of the format:
   - Mathematics: Ruolan Qiao (mathematician) and Anya Volkova (category theorist).
   - Physics: Kwame Mensah (theoretical physicist) and Hiroshi Sato (experimentalist).
   - Quantum information and computing: Sofia Marchetti (theorist) and Ignacio Valdivieso (classical-simulation skeptic).
-- **Generated experts.** For subfields no pack covers, `lab-cast` designs a core expert from each of two rival schools, a skeptic, a translator from a neighbouring field and, when relevant, a user of the result. Each is grounded in verified works, written into the project's customization, and named by the project.
 
 ## Rooms
 

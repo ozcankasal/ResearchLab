@@ -1,0 +1,49 @@
+name: Improve the lab for my field
+description: Share what someone in your field would want the lab to know
+title: "Field: "
+labels: ["field knowledge"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! The lab already works in any field; this helps it work better in yours. You don't need to write code: describe your field in plain words, and we can turn it into the right files together.
+  - type: input
+    id: field
+    attributes:
+      label: Field and OECD code
+      description: The OECD Fields of Science codes are listed in skills/lab-cast/catalogue/rules.toml.
+      placeholder: "Ecology, 1.5 Earth and related environmental sciences"
+    validations:
+      required: true
+  - type: textarea
+    id: databases
+    attributes:
+      label: Where the literature lives
+      description: The databases, archives and preprint servers researchers in your field search.
+  - type: textarea
+    id: standards
+    attributes:
+      label: Methods and reporting standards
+      description: The usual methods, and any reporting guidelines your venues expect.
+  - type: textarea
+    id: skeptic
+    attributes:
+      label: How claims fail in your field
+      description: The confounders, artefacts, missing controls or rival explanations a skeptical referee raises first.
+  - type: dropdown
+    id: presets
+    attributes:
+      label: Would named expert presets help your field?
+      description: Optional. Presets keep the same named, fictional experts across projects; without them, the lab designs experts for each project.
+      options:
+        - "No, the designed experts are enough"
+        - "Yes, and I can describe them"
+        - "Not sure"
+  - type: dropdown
+    id: help
+    attributes:
+      label: Would you like to open the pull request?
+      options:
+        - "Yes"
+        - "Yes, with some help"
+        - "No, but I can review a draft"

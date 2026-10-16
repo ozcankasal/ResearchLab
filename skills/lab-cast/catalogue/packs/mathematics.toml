@@ -1,4 +1,4 @@
-# Domain pack: mathematics. Selected by scripts/cast_plan.py for any project in mathematics.
+# Expert preset (optional): mathematics. Mainly an example of the format; no field needs a preset. Selected by scripts/cast_plan.py for any project in mathematics.
 
 [pack]
 id = "mathematics"

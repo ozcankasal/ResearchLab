@@ -23,7 +23,7 @@ Pick the attacks that fit the claim's kind and the project's modes. Each attack 
 
 ## Field-specific attacks
 
-Domain packs and generated experts bring their field's own ways for claims to die, for example:
+The project's domain experts, designed or preset, bring their field's own ways for claims to die, for example:
 
 - **Quantum claims** (quantum pack):
   - dequantization by a classical method with the same access;

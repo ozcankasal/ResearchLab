@@ -16,9 +16,9 @@ The plan names:
   - the lab's fixed core agents and general guests (always present);
   - guardians invited by sensitivities and outputs;
   - method specialists invited by research modes;
-  - domain packs whose fields match and whose keywords appear in the profile;
-  - generation slots: subfields (or fields) that no selected pack covers, for which the lab-cast skill
-    writes new domain experts;
+  - optional expert presets (catalogue/packs/) whose fields match and whose keywords appear in the profile;
+  - generation slots: subfields (or fields) that no selected preset covers, usually all of them, for
+    which the lab-cast skill designs the project's domain experts;
   - story types, reporting standards, search databases and extra gate conditions;
   - project rooms, with their catalogue members and the generated slots each one takes.
 --format toml prints the party-mode customization block for the catalogue personas and the rooms.

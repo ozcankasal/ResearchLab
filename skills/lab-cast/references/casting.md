@@ -1,13 +1,13 @@
-# Designing the experts a project still needs
+# Designing a project's domain experts
 
 `cast_plan.py` already chooses the fixed personas:
 
 - the core assistants;
 - the guardians for the sensitivities;
 - the method specialists for the modes;
-- the domain packs for the fields they cover.
+- any optional expert presets (files in `catalogue/packs/`) that match the project.
 
-You design the domain experts for the generation slots it lists, one set per uncovered subfield.
+You design the domain experts for the generation slots it lists: one set for each subfield that no preset covers. For most projects that means every subfield.
 
 ## Slots
 
@@ -53,6 +53,6 @@ Each generated `[[workflow.party_members]]` entry needs these fields:
 
 Personas are fictional. When the researcher asks for a real researcher, write a character drawn from that person's published work, never the person. Say so in the persona's first sentence. Cite only their real papers by title, mark everything beyond them as the character's conjecture, and never write invented quotations attributed to the real person.
 
-## Domain packs
+## Expert presets
 
-A pack is a reusable, named set of domain experts for a field (`catalogue/packs/`). The lab ships packs for mathematics, physics, and quantum information and computing. Packs grow only in the lab's own repository, as framework work at the researcher's request. A project's generated experts stay in the project.
+A preset is an optional, reusable set of named domain experts for a field, stored as one file in `catalogue/packs/`. No field needs one: designed experts serve every field. The lab ships three, for mathematics, physics, and quantum information and computing, mainly as examples of the format. Presets change only in the lab's own repository, as framework work at the researcher's request. A project's designed experts stay in the project.
