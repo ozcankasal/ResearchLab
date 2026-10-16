@@ -1,0 +1,5 @@
+# Skills this module no longer ships. `bmad setup` offers to delete any still installed and moves a renamed
+# skill's `_bmad/custom/` files to the new name. A retired name is never reused.
+# 1.1.0: the lab became field-agnostic. Domain experts are cast per project (lab-cast catalogue packs).
+renamed = [{ from = "lab-agent-computational", to = "lab-agent-methods" }]
+removed = ["lab-agent-mathematician", "lab-agent-physicist", "lab-agent-quantum"]

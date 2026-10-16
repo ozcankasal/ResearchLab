@@ -1,0 +1,71 @@
+# Language pack for tells.py. One file per language, named <code>.toml (ISO 639-1, e.g. de, fr, ja),
+# kept in the project's packs folder. Write it for the language that was detected, check it with
+# `tells.py --check-pack <file>`, and extend it whenever a text shows a habit the pack misses.
+
+[pack]
+code = "<iso-639-1 code>"
+language = "<language name>"
+has_case = true             # false for scripts without letter case (Arabic, Hebrew, Chinese, Japanese, Korean, Devanagari…)
+reviewed = false            # true only once the user or a fluent reader has read the pack
+created = "<YYYY-MM-DD>"
+notes = "<who wrote it, from what, and what it does not cover yet>"
+
+[detect]
+# 25–40 of the language's most frequent function words (articles, pronouns, conjunctions, particles,
+# common prepositions). For languages written without spaces, frequent particles or characters.
+words = []
+
+[text]
+sentence_end = "[.!?]"      # a character class, e.g. "[。！？]" for Japanese or "[.!?؟]" for Arabic
+unit = "word"               # "char" for languages written without spaces between words
+
+# One table per habit. `patterns` are Python regular expressions; use \b where the language has word
+# boundaries. `sentence_initial = true` anchors a pattern at the start of a sentence.
+# `advice` is what to write instead, in a few words. Every category should name habits that machine
+# text overuses in this language, not ordinary words a careful writer also uses.
+
+[categories.inflation]      # significance inflation: words that grade importance instead of stating it
+patterns = []
+advice = "state the specific consequence"
+
+[categories.copula]         # avoiding the plain "is/has" with grander verbs
+patterns = []
+advice = "use the plain verb"
+
+[categories.trailing]       # trailing participle or gerund clauses that comment on the sentence
+patterns = []
+advice = "cut it or give it its own sentence with evidence"
+
+[categories.authority]      # vague, unnamed authorities
+patterns = []
+advice = "name and cite the source, or cut"
+
+[categories.setpiece]       # reflexive structures: "not only … but also", "not X but Y", forced triads
+patterns = []
+advice = "say the two things plainly"
+
+[categories.signpost]       # sentence-initial connectives used on every sentence
+patterns = []
+sentence_initial = true
+case_sensitive = true
+advice = "start with the content"
+
+[categories.closer]         # summary sentences closing every paragraph
+patterns = []
+sentence_initial = true
+case_sensitive = true
+advice = "end when the point is made"
+
+[categories.hedge]          # stacked hedges
+patterns = []
+advice = "one hedge, on the uncertain part"
+
+[categories.throat]         # throat-clearing, sign-offs, assistant phrases
+patterns = []
+advice = "start with the result; stop when done"
+
+[examples]
+# At least three of each. Positive examples must each trigger a category; negative examples, written
+# the way a careful person writes this language, must trigger none.
+positive = []
+negative = []

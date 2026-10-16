@@ -1,0 +1,73 @@
+# Everything true of the whole lab module. Unknown keys and tables are ignored.
+
+[bmod]
+code = "lab"
+version = "1.1.0"
+update_source = "github:ozcankasal/ResearchLab/skills"
+skills = [
+  "lab-agent-pi",
+  "lab-agent-methods",
+  "lab-agent-engineer",
+  "lab-agent-librarian",
+  "lab-agent-factchecker",
+  "lab-agent-referee",
+  "lab-agent-editor",
+  "lab-agent-voice",
+  "lab-agent-expert",
+  "lab-cast",
+  "lab-spark",
+  "lab-survey",
+  "lab-frame",
+  "lab-plan",
+  "lab-prove",
+  "lab-experiment",
+  "lab-killtest",
+  "lab-factcheck",
+  "lab-referee",
+  "lab-write",
+  "lab-release",
+  "lab-notebook",
+  "lab-voice",
+]
+# The lab needs `bmad` 6.13.0 or later, but lists it with the skills `bmad` mentions once and does not
+# insist on. Projects link the lab's skills, and BMad's start-up check looks for required skills beside
+# the link's target (this repository's skills/ folder), where `bmad` never lives, so a requirement would
+# warn on every start. tools/install_lab.py installs `bmad` first, and every lab skill offers setup when
+# `_bmad/` is missing.
+recommended_skills = [
+  { skill = "bmad", version = "6.13.0", source = "github:bmad-code-org/BMAD-METHOD/skills" },
+  { skill = "bmad-party-mode", source = "github:bmad-code-org/BMAD-METHOD/skills" },
+  { skill = "bmad-build", source = "github:bmad-code-org/BMAD-METHOD/skills" },
+  { skill = "bmad-code-review", source = "github:bmad-code-org/BMAD-METHOD/skills" },
+  { skill = "bmad-customize", source = "github:bmad-code-org/BMAD-METHOD/skills" },
+]
+pre_install_message = ""
+post_install_message = """
+Research Lab is installed: eight core assistants, an Expert Desk, eight standing guests and guardians, six rooms and fourteen workflows that help a researcher plan, question, verify and document their work in any field. Each project is classified by lab-cast, which brings in the specialists, guardians, story types and standards its field and methods call for. The researcher stays the author; read help/responsible-use.md in bmod-lab.
+Start with Nadia, the PI ("talk to Nadia"), who runs lab-cast first. Lab rooms for bmad-party-mode: spark-lab, tribunal, build-room, editorial-board, steering-committee, integrity-board; each project adds its own.
+To give bmad-build the lab's research-software standards in this project, see help/research-software.md in bmod-lab.
+"""
+
+# Asked by `bmad setup` in this order. Members read each answer as modules.lab.<key>.
+[[bmod.config_questions]]
+key = "author"
+prompt = "Your name as it should appear on papers and release records"
+default = ""
+scope = "user"
+
+[[bmod.config_questions]]
+key = "affiliation"
+prompt = "Your affiliation for papers and release records (empty for none)"
+default = ""
+scope = "user"
+
+[[bmod.config_questions]]
+key = "orcid"
+prompt = "Your ORCID iD for release records (empty for none)"
+default = ""
+scope = "user"
+
+[[bmod.config_questions]]
+key = "papers_folder"
+prompt = "Folder where paper projects (LaTeX source, figures, citation records) are created"
+default = "{project-root}/papers"

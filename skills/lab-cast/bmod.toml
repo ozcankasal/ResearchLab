@@ -1,0 +1,9 @@
+[skill]
+bmod = "bmod-lab"
+source = "github:ozcankasal/ResearchLab/skills"
+recommended_skills = [
+  "lab-notebook",
+  "lab-spark",
+  { skill = "bmad-party-mode", source = "github:bmad-code-org/BMAD-METHOD/skills" },
+  { skill = "bmad-customize", source = "github:bmad-code-org/BMAD-METHOD/skills" },
+]

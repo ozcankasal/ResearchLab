@@ -1,0 +1,31 @@
+# Release manifest for bundle.py, kept at the project root. Paths are relative to this file unless
+# absolute; ~ is expanded.
+# {version} is replaced by release.version in names and in out.
+
+[release]
+name = "<project-slug>"
+version = "1.0"
+root = "."                                   # the project root, relative to this file
+out = "~/Documents/<project-slug>-zenodo-submission"   # outside the repository
+
+[pdf]
+source = "papers/<slug>/main.pdf"
+name = "<author-surname>-<project-slug>-<year>.pdf"
+
+[source]
+root = "papers/<slug>"
+main = "main.tex"
+files = ["main.tex", "references.bib", "figures/*.pdf"]   # add "main.bbl" for arXiv
+name = "latex-source.tar.gz"
+
+[code]
+root = "."
+prefix = "<project-slug>-code-v{version}"
+include = [
+  "README.md", "LICENSE", "CITATION.cff", "pyproject.toml", "uv.lock", ".gitignore",
+  "src/**/*.py", "tests/**/*.py", "scripts/figures.py",
+  "papers/<slug>/main.tex", "papers/<slug>/references.bib", "papers/<slug>/main.pdf",
+  "papers/<slug>/figures/*", "papers/<slug>/claims.csv",
+  "papers/<slug>/references/reference_audit.csv", "papers/<slug>/references/notes/*.md",
+]
+exclude = ["**/references/pdf/**", "**/references/txt/**", "**/__pycache__/**"]

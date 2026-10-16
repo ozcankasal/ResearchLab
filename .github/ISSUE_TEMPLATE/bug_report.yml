@@ -1,0 +1,33 @@
+name: Bug report
+description: Something in the lab or its setup doesn't work
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for reporting. Please leave out personal data and unpublished research content.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What did you ask for, and what did the lab do?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+  - type: input
+    id: assistant
+    attributes:
+      label: AI assistant
+      placeholder: "the assistant, its version, and where it runs (terminal, editor or desktop app)"
+  - type: input
+    id: system
+    attributes:
+      label: Operating system
+      placeholder: "for example, macOS 15 or Windows 11"
+  - type: textarea
+    id: output
+    attributes:
+      label: Installer or script output, if any
+      render: text

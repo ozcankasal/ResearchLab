@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="808" viewBox="0 0 1000 808" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1000" height="808" rx="20" fill="#f8fafc"/>
+  <rect x="20" y="16" width="960" height="750" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <path d="M20,58 h960" stroke="#e2e8f0"/>
+  <circle cx="46" cy="37" r="6.5" fill="#f87171"/><circle cx="68" cy="37" r="6.5" fill="#fbbf24"/><circle cx="90" cy="37" r="6.5" fill="#4ade80"/>
+  <text x="500.0" y="42" text-anchor="middle" font-size="14" fill="#64748b">credit-scores · your AI assistant</text>
+  <rect x="446" y="96" width="490" height="66" rx="14" fill="#2563eb"/>
+  <text x="464" y="123" font-size="15" fill="#ffffff">Talk to Nadia. I want to study how households read their</text>
+  <text x="464" y="145" font-size="15" fill="#ffffff">credit scores.</text>
+  <circle cx="70" cy="198" r="20" fill="#475569"/><text x="70" y="204" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">NH</text><rect x="102" y="176" width="700" height="106" rx="14" fill="#f1f5f9"/><text x="120" y="200" font-size="13.5" font-weight="700" fill="#475569">Nadia Haddad</text>
+  <text x="120" y="224" font-size="15" fill="#1e293b">Let's classify it first, so the right people join. I read it as economics and</text>
+  <text x="120" y="246" font-size="15" fill="#1e293b">psychology, observational and qualitative, with human participants and</text>
+  <text x="120" y="268" font-size="15" fill="#1e293b">personal data. Is that right?</text>
+  <rect x="778" y="296" width="158" height="44" rx="14" fill="#2563eb"/>
+  <text x="796" y="323" font-size="15" fill="#ffffff">Yes, that's it.</text>
+  <rect x="102" y="354" width="834" height="192" rx="14" fill="#ecfdf5" stroke="#10b981" stroke-opacity="0.6"/><text x="120" y="380" font-size="13.5" font-weight="700" fill="#047857">lab-cast · joining your project</text><rect x="120" y="396" width="236" height="28" rx="14" fill="#ffffff" stroke="#a7f3d0"/><text x="133" y="415" font-size="13.5" fill="#065f46">Priya Raman · causal inference</text><rect x="366" y="396" width="285" height="28" rx="14" fill="#ffffff" stroke="#a7f3d0"/><text x="379" y="415" font-size="13.5" fill="#065f46">Camille Laurent · qualitative methods</text><rect x="661" y="396" width="236" height="28" rx="14" fill="#ffffff" stroke="#a7f3d0"/><text x="674" y="415" font-size="13.5" fill="#065f46">Leila Rahimi · research ethics</text><rect x="120" y="432" width="229" height="28" rx="14" fill="#ffffff" stroke="#a7f3d0"/><text x="133" y="451" font-size="13.5" fill="#065f46">Mateo Rossi · data protection</text><rect x="359" y="432" width="432" height="28" rx="14" fill="#ffffff" stroke="#a7f3d0"/><text x="372" y="451" font-size="13.5" fill="#065f46">+ new experts for household finance and financial literacy</text><text x="120" y="486" font-size="13" fill="#047857">Stories: STUDY · DATA · LIT · WRITE · DECIDE</text><text x="120" y="507" font-size="13" fill="#047857">Gate G2: ethics approval before any recruitment or data collection</text><text x="120" y="528" font-size="13" fill="#047857">Search: RePEc · SSRN · PsycINFO · ERIC · OpenAlex · Google Scholar</text>
+  <circle cx="70" cy="582" r="20" fill="#d97706"/><text x="70" y="588" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">VH</text><rect x="102" y="560" width="700" height="84" rx="14" fill="#f1f5f9"/><text x="120" y="584" font-size="13.5" font-weight="700" fill="#d97706">Viktor Hale</text>
+  <text x="120" y="608" font-size="15" fill="#1e293b">Before anyone recruits a single household: what result would make you drop</text>
+  <text x="120" y="630" font-size="15" fill="#1e293b">this idea?</text>
+  <circle cx="70" cy="680" r="20" fill="#7c3aed"/><text x="70" y="686" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">LR</text><rect x="102" y="658" width="700" height="84" rx="14" fill="#f1f5f9"/><text x="120" y="682" font-size="13.5" font-weight="700" fill="#7c3aed">Leila Rahimi</text>
+  <text x="120" y="706" font-size="15" fill="#1e293b">And who approves the interviews? Nothing starts until the ethics committee</text>
+  <text x="120" y="728" font-size="15" fill="#1e293b">does.</text>
+  <text x="500.0" y="792" text-anchor="middle" font-size="13" fill="#64748b">Illustrative session, condensed. The specialists, stories, gate and databases are the planner's real output for this project.</text>
+</svg>

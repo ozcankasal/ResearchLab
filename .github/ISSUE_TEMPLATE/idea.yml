@@ -1,0 +1,19 @@
+name: Idea or improvement
+description: Suggest a workflow, check, playbook or change
+labels: ["idea"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What research problem would this help with?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like the lab to do?
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Guidelines, papers or practices behind the idea, with links.

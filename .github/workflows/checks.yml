@@ -1,0 +1,25 @@
+name: checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Generated files are up to date
+        run: |
+          uv run --no-cache tools/build_cast.py
+          uv run --no-cache tools/readme_figures.py
+          git diff --exit-code
+      - name: Script tests
+        run: |
+          for t in skills/*/scripts/tests; do
+            uv run --no-cache --with pytest pytest -q -p no:cacheprovider "$t"
+          done

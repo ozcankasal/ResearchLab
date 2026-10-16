@@ -1,0 +1,8 @@
+[skill]
+bmod = "bmod-lab"
+source = "github:ozcankasal/ResearchLab/skills"
+recommended_skills = [
+  "lab-frame",
+  "lab-notebook",
+  { skill = "bmad-build", source = "github:bmad-code-org/BMAD-METHOD/skills" },
+]

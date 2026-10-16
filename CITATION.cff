@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If Research Lab supports your work, you can cite it as below."
+type: software
+title: "Research Lab: AI research assistants for any field, built on BMad"
+abstract: >-
+  A BMad module of AI research assistants for researchers in any field. A fixed
+  core team helps plan, search prior art, question, verify and document a
+  project, and each project brings in the specialists, guardians, reporting
+  standards and checks that its classification calls for. The researcher
+  remains the author, and AI assistance is recorded for disclosure.
+authors:
+  - family-names: "Kasal"
+    given-names: "Özcan"
+version: "1.1.0"
+date-released: "2026-10-16"
+license: MIT
+repository-code: "https://github.com/ozcankasal/ResearchLab"
+url: "https://github.com/ozcankasal/ResearchLab"
+keywords:
+  - research methods
+  - research integrity
+  - reproducibility
+  - fact-checking
+  - citation verification
+  - peer review
+  - AI assistants
+  - agent skills
+  - BMad

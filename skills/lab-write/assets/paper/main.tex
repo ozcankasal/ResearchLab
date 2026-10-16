@@ -1,0 +1,91 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[margin=30mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,tabularx}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
+\hypersetup{hypertexnames=false, pdftitle={<<TITLE>>}, pdfauthor={<<AUTHOR>>}}
+\usepackage[capitalise,noabbrev,nosort]{cleveref}
+\usepackage[font=small,labelfont=bf]{caption}
+
+\setlist[itemize,enumerate]{itemsep=3pt,parsep=0pt,topsep=4pt}
+\emergencystretch=3em
+\linespread{1.05}
+
+\usepackage{thmtools}
+\declaretheorem[style=plain,name=Theorem,numberwithin=section]{theorem}
+\declaretheorem[style=plain,name=Corollary,sibling=theorem]{corollary}
+\declaretheorem[style=plain,name=Proposition,sibling=theorem]{proposition}
+\declaretheorem[style=plain,name=Lemma,sibling=theorem]{lemma}
+\declaretheorem[style=plain,name=Conjecture,sibling=theorem]{conjecture}
+\declaretheorem[style=definition,name=Definition,sibling=theorem]{definition}
+\declaretheorem[style=remark,name=Remark,sibling=theorem]{remark}
+
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\bra}[1]{\langle #1|}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Tr}{\operatorname{Tr}}
+
+\title{<<TITLE>>}
+\author{<<AUTHOR>>\\[2pt]\normalsize <<AFFILIATION>>}
+\date{<<MONTH YEAR>>}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+<<The problem. Why it matters. What we show, stated so it could be refuted. What follows, and the main limit.>>
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+<<What the problem is, why it matters, why it is hard, why it is unsolved, and our approach.>>
+
+We establish:
+\begin{enumerate}[leftmargin=2em]
+\item <<a refutable contribution, pointing to its statement>> (\cref{thm:main});
+\end{enumerate}
+
+\paragraph{What we do not claim.} <<The limits a reader might otherwise assume we cross.>>
+
+\paragraph{Related work.} <<Closest prior results under their own names, with the exact difference from ours.>>
+
+\section{Setting}\label{sec:setting}
+
+\begin{definition}\label{def:object}
+<<Definition.>>
+\end{definition}
+
+\section{Results}\label{sec:results}
+
+\begin{theorem}\label{thm:main}
+<<Self-contained statement with every hypothesis.>>
+\end{theorem}
+
+\begin{proof}
+<<Proof.>>
+\end{proof}
+
+\section{Discussion}\label{sec:discussion}
+
+<<What the results mean, what remains open, the honest limits.>>
+
+\appendix
+
+\section{Sources}\label{app:sources}
+
+<<What each cited work is used for; which enter a proof and where. Every other citation is comparison only.>>
+
+\section{Reproducibility}\label{app:code}
+
+<<The repository, the commands that regenerate every figure and number from the fixed seed, and the map from numbered statements to tests.>>
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}

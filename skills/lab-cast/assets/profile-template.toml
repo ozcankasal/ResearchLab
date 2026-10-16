@@ -1,0 +1,30 @@
+# Project profile: the classification lab-cast confirms with the researcher and cast_plan.py reads.
+# Definitions of every axis: references/classification.md.
+
+[project]
+slug = "<kebab-case project slug>"
+title = "<project title>"
+summary = "<two sentences: the question and the approach>"
+
+[classification]
+# OECD Fields of Science and Technology codes, with names for readability, e.g. "1.1 Mathematics",
+# "3.3 Health sciences", "5.2 Economics and business", "6.1 History and archaeology". One or more.
+fields = []
+
+# The field's own names for the specific areas, e.g. "model theory", "household finance",
+# "Ottoman economic history". Each subfield no domain pack covers gets newly cast experts.
+subfields = []
+
+# How the project produces knowledge, one or more of:
+# formal, computational, experimental, observational, qualitative, design, synthesis, archival
+modes = []
+
+# What it will produce, any of: paper, software, dataset, patent, report
+outputs = []
+
+# What needs guarding, any of: human-participants, personal-data, animals, clinical, dual-use,
+# commercial, regulated. Leave empty only when none applies.
+sensitivities = []
+
+# Free terms that help match domain packs and searches.
+keywords = []

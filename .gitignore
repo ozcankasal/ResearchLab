@@ -1,0 +1,19 @@
+# OS and editor files
+.DS_Store
+._*
+.vscode/
+.idea/
+
+# Python caches
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# The BMad install that maintains this repository, and its outputs, never enter it.
+# The lab's source is skills/; projects link to it.
+_bmad/
+_bmad-output/
+.agents/
+/.*/skills/
+skills-lock.json
+AGENTS.md

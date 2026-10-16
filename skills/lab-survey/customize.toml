@@ -1,0 +1,28 @@
+# DO NOT EDIT -- generated from tools/workflows.py and overwritten on every update.
+#
+# Customization surface for lab-survey.
+# Team overrides:     {project-root}/_bmad/custom/lab-survey.toml
+# Personal overrides: {project-root}/_bmad/custom/lab-survey.user.toml
+#
+# Merge rules: scalars override, arrays append, tables merge key by key,
+# arrays of tables merge by `code` or `id`.
+
+[workflow]
+
+# Instructions run before config is loaded.
+activation_steps_prepend = []
+
+# Instructions run after activation, before the work begins.
+activation_steps_append = []
+
+# Standing context for the whole run: literal sentences, or `file:` paths and
+# globs under {project-root} whose contents are loaded as facts.
+persistent_facts = []
+
+# Run after the output has been delivered. A string or an array of strings;
+# empty for none.
+on_complete = ""
+
+# Where runs land, and the folder and file name inside it. {slug} is set at run time.
+survey_output_path = "{output_folder}/{active_initiative}"
+run_folder_pattern = "survey-{slug}"

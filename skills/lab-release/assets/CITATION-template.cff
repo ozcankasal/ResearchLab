@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "<software title>"
+version: "<version>"
+date-released: "<YYYY-MM-DD>"
+license: MIT
+authors:
+  - family-names: "<Surname>"
+    given-names: "<Given>"
+    affiliation: "<affiliation>"
+    orcid: "https://orcid.org/<orcid>"
+identifiers:
+  - type: doi
+    value: "<version DOI of this software record>"
+preferred-citation:
+  type: article
+  title: "<paper title>"
+  authors:
+    - family-names: "<Surname>"
+      given-names: "<Given>"
+  year: <YYYY>
+  doi: "<paper DOI>"
