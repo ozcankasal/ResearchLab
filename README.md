@@ -214,11 +214,11 @@ Eight assistants with fixed names work on every project, in every field:
 
 Five guests who disagree for a living:
 
-- **Jamie**, a smart outsider: "what does that term mean?"
-- **Lucien**, a historian of science and ideas: "who did this before, under which name?"
-- **Grace**, a statistician: "how many analyses did you try?"
-- **Emre**, a practitioner: "what changes on Monday morning?"
-- **Hannah**, an IP and disclosure officer: "can this leave the building yet?"
+- **Jamie Fenwick**, a smart outsider: "what does that term mean?"
+- **Lucien Delorme**, a historian of science and ideas: "who did this before, under which name?"
+- **Grace Okonkwo**, a statistician: "how many analyses did you try?"
+- **Emre Demir**, a practitioner: "what changes on Monday morning?"
+- **Hannah Fairbairn**, an IP and disclosure officer: "can this leave the building yet?"
 
 Three guardians who join when your project needs them:
 
